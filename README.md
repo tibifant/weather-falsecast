@@ -1,5 +1,6 @@
 # AI-Weather Falsecast
-A neural network trained on years of weather data to predict the weather for Cologne, Germany based on live weather data.
+
+The weather forecast for Cologne, Germany predicted via brain.js with live weather data. Trained on years of Data with pytorch.
 
 Trained with pytorch and transfered to be used with brain.js to meet the projects needs.
 
