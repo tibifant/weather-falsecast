@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+    font-family: 'PlexMono';
+}
+
+@font-face {
+    font-family: 'PlexMono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'PlexMono';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3pQPwlBFgg.woff2) format('woff2');
+}
+
+weather_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 1300pt;
+    width: 768px;
+    height: 540px;
+}
+
+div#weather_table
+{
+  width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
+  height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
+  background: #0e0e0ebf;
+  --margin: 20pt;
+  margin: var(--margin);
+  border-radius: 20px;
+  font-family: 'PlexMono';
+  --paddingY: 20pt;
+  --paddingX: 20pt;
+  padding: var(--paddingX) var(--paddingY);
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  display: block;
+  backdrop-filter: blur(6pt);
+}
+
+div#weather_table_back
+{
+  width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
+  height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
+  background: #0e0e0ebf;
+  --margin: 20pt;
+  margin: var(--margin);
+  border-radius: 20px;
+  font-family: 'PlexMono';
+  --paddingY: 20pt;
+  --paddingX: 20pt;
+  padding: var(--paddingX) var(--paddingY);
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  display: none;;
+  backdrop-filter: blur(6pt);
+}
+
+.faketable
+{
+    width: calc(93% / 5);
+    display: block;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    margin-top: 10pt;
+    padding: 0;
+    font-size: 220%;
+}
+
+i.faketable {
+    font-style: normal;
+    font-size: 140%;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 20pt;
+    margin-top: 0;
+}
+
+b.faketable {
+    font-weight: normal;
+}
+
+box {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+row.temperature b.faketable:nth-child(1) {
+    font-weight: bold;
+    color: rgb(242, 245, 64);
+}
+
+row.clouds b.faketable:nth-child(1) {
+    font-weight: bold;
+    color: rgb(101, 208, 160);
+}
+
+row.precipitation b.faketable:nth-child(1) {
+    font-weight: bold;
+    color: rgb(105, 201, 214);
+}
+
+h3 {
+    font-size: 140%;
+    margin: 0;
+    color: #343434;
+}
+
+h2 {
+    text-align: center;
+    margin: 35pt;
+}

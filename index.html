@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Project Explore - CoCo Dashboard Code Starter</title>
+        <!-- Load p5 and addons first, ...  -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
+        <!--<link href="https://unpkg.com/@csstools/normalize.css@12.1.1/normalize.css" rel="stylesheet" />
+        !--><link rel="stylesheet" href="screen.css">
+        <script src="https://unpkg.com/brain.js@1.0.0-rc.3/browser.js"></script>
+        <!-- then load sketch parts ...  -->
+        <!--    <script src="sketch_covid.js"></script>-->
+        <!--script src="sketch_peanuts.js"></script>-->
+        <script src = "sketch_weather_malin.js"></script>
+        <script src = "test.js"></script>
+        <script src = "weatherDataPreparationMalin.js"></script>
+        <script src = "assets/modelS2_fix.js"></script>
+        <!--<script src = "example.js"></script>-->
+    <!-- ... and finally the main sketch file. -->
+    <script src="sketch.js"></script>
+
+</head>
+<body>
+    <weather_box>
+        <div id="weather_table">
+            <row class="time">
+                <i class="faketable">now</i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+            </row>
+            <row class="temperature">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>temperature</h3>
+            <row class="clouds">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>cloud coverage</h3>
+            <row class="precipitation">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>precipitation</h3>
+            <h2>AI Weather Falsecast</h2>
+        </div>
+    </weather_box>
+    <weather_box>
+        <div id="weather_table_back">
+            <row class="time">
+                <i class="faketable">now</i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+                <i class="faketable"></i>
+            </row>
+            <row class="temperature">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>temperature</h3>
+            <row class="clouds">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>cloud coverage</h3>
+            <row class="precipitation">
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+                <b class="faketable"></b>
+            </row>
+            <h3>precipitation</h3>
+            <h2>Weather Forecast</h2>
+        </div>
+    </weather_box>
+</body>
+</html>
