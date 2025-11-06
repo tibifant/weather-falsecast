@@ -1,9 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background: #000;
+    background: #030303;
     color: white;
     font-family: 'PlexMono';
+}
+
+main {
+    width: 768px;
+    margin: 80pt auto;
 }
 
 @font-face {
@@ -23,50 +28,26 @@ body {
 }
 
 weather_box {
-    top: 0;
-    left: 0;
-    perspective: 1300pt;
     width: 768px;
     height: 540px;
 }
 
-div#weather_table
-{
-  width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
-  height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
-  background: #0e0e0ebf;
-  --margin: 20pt;
-  margin: var(--margin);
-  border-radius: 20px;
-  font-family: 'PlexMono';
-  --paddingY: 20pt;
-  --paddingX: 20pt;
-  padding: var(--paddingX) var(--paddingY);
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  display: block;
-  backdrop-filter: blur(6pt);
+div#weather_table,
+div#weather_table_back {
+    width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
+    height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
+    background: #0e0e0ebf;
+    --margin: 20pt;
+    margin: calc(var(--margin) + 20pt) 0;
+    border-radius: 20px;
+    font-family: 'PlexMono';
+    --paddingY: 30pt;
+    --paddingX: 20pt;
+    padding: var(--paddingX) var(--paddingY);
+    display: block;
 }
 
-div#weather_table_back
-{
-  width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
-  height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
-  background: #0e0e0ebf;
-  --margin: 20pt;
-  margin: var(--margin);
-  border-radius: 20px;
-  font-family: 'PlexMono';
-  --paddingY: 20pt;
-  --paddingX: 20pt;
-  padding: var(--paddingX) var(--paddingY);
-  transform-style: preserve-3d;
-  display: block;
-  backdrop-filter: blur(6pt);
-}
-
-.faketable
-{
+.faketable {
     width: calc(93% / 5);
     display: block;
     text-align: center;
