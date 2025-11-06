@@ -23,7 +23,6 @@ body {
 }
 
 weather_box {
-    position: absolute;
     top: 0;
     left: 0;
     perspective: 1300pt;
@@ -62,8 +61,7 @@ div#weather_table_back
   --paddingX: 20pt;
   padding: var(--paddingX) var(--paddingY);
   transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  display: none;;
+  display: block;
   backdrop-filter: blur(6pt);
 }
 

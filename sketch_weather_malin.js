@@ -66,9 +66,8 @@ let animationVar = 0;
 const animationStep = (Math.PI * 0.5) / animationLength;
 
 function weatherDraw() {
-  
-  if (frameCount == animationStart)
-    flipWeatherBox();
+  //if (frameCount == animationStart)
+    //flipWeatherBox();
 }
 
 function flipWeatherBox() {
