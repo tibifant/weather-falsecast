@@ -32,8 +32,8 @@ weather_box {
     height: 540px;
 }
 
-div#weather_table,
-div#weather_table_back {
+div#ai_weather_table,
+div#weather_table {
     width: calc(768px - var(--paddingX) * 2 - var(--margin) * 2);
     height: calc(540px - var(--paddingY) * 2 - var(--margin) * 2);
     background: #0e0e0ebf;
