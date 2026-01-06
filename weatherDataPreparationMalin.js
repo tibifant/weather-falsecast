@@ -120,7 +120,7 @@ function writeInputDataToFile() {
   // input data
   let inputData = [];
   
-  console.log("staring to iterate input data");
+  console.log("starting to iterate input data");
 
   let start = //0;
   halfDataLength;
